@@ -1,7 +1,8 @@
-import { DashboardComponent } from './application/components/dashboard/dashboard.component';
-import { PersonaComponent } from './application/components/persona/persona.component';
-import { PersonaFormComponent } from './application/components/persona/persona-form/persona-form.component';
-import { EpsComponent } from './application/components/eps/eps.component';
+import { DashboardComponent } from './application/components/ui/dashboard/dashboard.component';
+import { EpsComponent } from './application/components/components/eps/eps.component';
+import { PersonaComponent } from './application/components/components/persona/persona.component';
+import { PersonaFormComponent } from './application/components/components/persona/persona-form/persona-form.component';
+import { FichaComponent } from './application/components/components/persona/ficha/ficha.component';
 
 
 import { NgModule } from '@angular/core';
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'persona-form',
     component: PersonaFormComponent
+  },
+  {
+    path: 'ficha',
+    component: FichaComponent
   },
   {
     path: 'eps',

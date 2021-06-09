@@ -19,4 +19,9 @@ export class DashboardComponent implements OnInit {
     this.router.navigate(['/persona-form']);
   }
 
+  urlEps(): void{
+
+    this.router.navigate(['/eps']);
+  }
+
 }

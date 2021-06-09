@@ -24,11 +24,11 @@ export class PersonaService {
     return this.http.delete(`${this.API_URI}/persona/${id}`);
   }
 
-  savePersona(Persona: persona) {
+  savePersona(persona: Persona) {
     return this.http.post(`${this.API_URI}/persona`, persona);
   }
 
-  updatePersona(id: string|number, updatedPersona: persona): Observable<Persona> {
+  updatePersona(id: string|number, updatedPersona: Persona): Observable<Persona> {
     return this.http.put(`${this.API_URI}/Persona/${id}`, updatedPersona);
   }
 

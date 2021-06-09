@@ -1,4 +1,4 @@
-import { Core_eps } from '../model/core_eps';
+import { Core_eps } from './core_eps';
 
 export interface Persona {
   schema_version ? : number,

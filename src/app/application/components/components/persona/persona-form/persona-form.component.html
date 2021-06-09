@@ -1,0 +1,155 @@
+<div class="py-5 text-center">
+  <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt=""
+    width="72" height="72">
+  <h2>Formulario Paciente</h2>
+  <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a
+    validation state that can be triggered by attempting to submit the form without completing it.</p>
+</div>
+
+<div class="row">
+
+  <div class="col-md-12 order-md-1">
+    <h4 class="mb-3">Datos Personales</h4>
+    <form class="needs-validation" novalidate="">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <label for="firstName">Primer Nombre</label>
+          <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+          <div class="invalid-feedback">
+            Este campo es requerido.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="lastName">Segundo Nombre</label>
+          <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+          <div class="invalid-feedback">
+            Este campo es requerido.
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+          <label for="firstName">Primer Apellido</label>
+          <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+          <div class="invalid-feedback">
+            Este campo es requerido.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="lastName">Segundo Apellido</label>
+          <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+          <div class="invalid-feedback">
+            Este campo es requerido.
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <label for="firstName">Fecha de Nacimiento</label>
+          <input type="date" class="form-control" id="firstName" placeholder="" value="" required="">
+          <div class="invalid-feedback">
+            Este campo es requerido.
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <label for="state">Estado Civil</label>
+          <select class="custom-select d-block w-100" id="state" required="">
+            <option value="">Opcion...</option>
+            <option>Soltero</option>
+            <option>Casado</option>
+            <option>Union Libre</option>
+            <option>Viudo</option>
+          </select>
+          <div class="invalid-feedback">
+            Debe seleccionar una opcion valida.
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <label for="state">Sexo</label>
+          <select class="custom-select d-block w-100" id="state" required="">
+            <option value="">Opcion...</option>
+            <option>Masculino</option>
+            <option>Femenino</option>
+            <option>no-binarios</option>
+            <option>Cisgénero</option>
+            <option>Transexuales</option>
+            <option>Transgénero</option>
+          </select>
+          <div class="invalid-feedback">
+            Debe seleccionar una opcion valida.
+          </div>
+        </div>
+
+      </div>
+      <hr class="mb-4">
+
+      <h4 class="mb-3">Identificacion</h4>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <label for="firstName">Numero</label>
+          <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+          <div class="invalid-feedback">
+            Este campo es requerido.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="lastName">Fecha de Expedicion</label>
+          <input type="date" class="form-control" id="lastName" placeholder="" value="" required="">
+          <div class="invalid-feedback">
+            Este campo es requerido.
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <label for="firstName">Lugar de Expedicion</label>
+          <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+          <div class="invalid-feedback">
+            Este campo es requerido.
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <label for="exampleFormControlSelect2">Tipo de Identificacion personal:</label>
+            <select multiple="" class="form-control" id="exampleFormControlSelect2">
+              <option>Documento de Identificacion</option>
+              <option>Rut</option>
+              <option>Pasaporte</option>
+              <option>Documento extranjeto Identificacion</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <hr class="mb-4">
+
+      <h4 class="mb-3">Correos Electronico de uso</h4>
+      <div class="bd-example" data-example-id="">
+        <form class="form-inline">
+          <div class="form-group">
+            <label class="sr-only">Email</label>
+            <p class="form-control-static">Corre Electronico</p>
+          </div>
+          <div class="form-group mx-sm-3">
+            <label for="inputPassword2" class="sr-only">@</label>
+            <input type="mail" class="form-control" id="inputPassword2" placeholder="@">
+          </div>
+          <button type="submit" class="btn btn-primary"><i class="fas fa-plus"></i> Agregar</button>
+        </form>
+        </div>
+      <hr class="mb-4">
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Guardar</button>
+    </form>
+  </div>
+</div>
+
+<footer class="my-5 pt-5 text-muted text-center text-small">
+  <p class="mb-1">© 2017-2018 Company Name</p>
+  <ul class="list-inline">
+    <li class="list-inline-item"><a href="#">Privacy</a></li>
+    <li class="list-inline-item"><a href="#">Terms</a></li>
+    <li class="list-inline-item"><a href="#">Support</a></li>
+  </ul>
+</footer>

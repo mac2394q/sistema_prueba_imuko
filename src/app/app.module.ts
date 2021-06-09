@@ -3,14 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { EpsComponent } from './application/components/eps/eps.component';
-import { PersonaComponent } from './application/components/persona/persona.component';
-import { PersonaFormComponent } from './application/components/persona/persona-form/persona-form.component';
-import { NavigationComponent } from './application/components/navigation/navigation.component';
-import { DashboardComponent } from './application/components/dashboard/dashboard.component';
+import { EpsComponent } from './application/components/components/eps/eps.component';
+import { PersonaComponent } from './application/components/components/persona/persona.component';
+import { PersonaFormComponent } from './application/components/components/persona/persona-form/persona-form.component';
+import { NavigationComponent } from './application/components/ui/navigation/navigation.component';
 
-import { EpsService } from './application/modules/persona/service/eps.service.js';
-import { PersonaService } from './application/modules/persona/service/persona.service.js';
+import { DashboardComponent } from './application/components/ui/dashboard/dashboard.component';
+import { EpsService } from './application/modules/services/eps.service';
+import { PersonaService } from './application/modules/services/persona.service';
+import { FichaComponent } from './application/components/components/persona/ficha/ficha.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PersonaService } from './application/modules/persona/service/persona.se
     PersonaComponent,
     PersonaFormComponent,
     NavigationComponent,
-    DashboardComponent
+    DashboardComponent,
+    FichaComponent
   ],
   imports: [
     BrowserModule,
